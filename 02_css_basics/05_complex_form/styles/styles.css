@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.form-element {
+    margin: 10px 0 10px 0;
+}
+
+.form-element label, p {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+.options {
+    display: inline-block;
+}
+
+.bold {
+    font-weight: bold;
+}

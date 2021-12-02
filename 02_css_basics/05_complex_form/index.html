@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment Complex HTML Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1>Complex HTML Form</h1>
+    </header>
+    <main class="container">
+        <form name="recipe-form" method="POST" data-netlify="true">
+            <div class="form-element">
+                <label class="bold" for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-element">
+                <label class="bold" for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-element">
+                <label class="bold" for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-element">
+                <label class="bold" for="age">Age:</label>
+                <input type="text" id="age" name="age">
+            </div>
+            <div class="form-element">
+                <label class="bold" for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-element">
+                <p class="bold">Gender:</p>
+                <div class="options">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-element">
+                <p class="bold">Favorite cuisine:</p>
+                <div class="options">
+                    <input type="checkbox" id="cuisine1" name="cuisine1" value="French">
+                    <label for="cuisine1">French</label><br>
+                    <input type="checkbox" id="cuisine2" name="cuisine2" value="Italian">
+                    <label for="cuisine2">Italian</label><br>
+                    <input type="checkbox" id="cuisine3" name="cuisine3" value="Spanish">
+                    <label for="cuisine3">Spanish</label><br>
+                    <input type="checkbox" id="cuisine4" name="cuisine4" value="Arabic">
+                    <label for="cuisine4">Arabic</label>
+                </div>
+            </div>
+            <div class="form-element">
+                <label class="bold" for="fav-apron-color">Favorite apron color:</label>
+                <input type="color" id="fav-apron-color" name="fav-apron-color">
+            </div>
+            <div class="form-element">
+                <label class="bold" for="text-field">Biography:</label>
+                <div class="options">
+                    <textarea name="text-field" id="text-field"></textarea>
+                </div>
+            </div>
+            <div class="form-element">
+                <label class="bold" for="latest-recipe">Upload your latest recipe:</label>
+                <input type="file" id="latest-recipe" name="latest-recipe">
+            </div>
+            <div class="form-element">
+                <label class="bold" for="recipe-website">URL to recipe website:</label>
+                <input type="url" id="recipe-website" name="recipe-website">
+            </div>
+            <button type="submit">Submit</button>
+            <input type="reset">
+        </form>
+
+    </main>
+</body>
+
+</html>
