@@ -91,3 +91,16 @@ figure, article {
 .blog-post-picture {
     width: 25%;
 }
+
+@media (min-width: 1024px) {
+    body {
+        background-color: rgb(201, 201, 201);
+        color: rgb(110, 110, 110);
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+
+    .site-section {
+        background-color: white;
+    }
+}
