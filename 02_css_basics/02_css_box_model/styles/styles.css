@@ -1,0 +1,93 @@
+@font-face {
+    font-family: proximaNovaRegular;
+    src: url(../fonts/proximanova-regular.otf);
+}
+
+@font-face {
+    font-family: proximaNovaSemibold;
+    src: url(../fonts/proximanova-semibold.otf);
+}
+
+@font-face {
+    font-family: proximaNovaLight;
+    src: url(../fonts/proximanova-light.otf);
+}
+
+body {
+    color:rgb(70, 70, 70);
+    font-family: proximaNovaRegular;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-family: proximaNovaSemibold;
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-ul li {
+    background-color: rgb(53, 53, 53);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: proximaNovaSemibold;
+    font-size: 0.9em;
+    margin: 5px 0 5px 0;
+    padding: 2.5px 5px 2.5px 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.nav-ul a {
+    color: white;
+}
+
+figure, article {
+    margin: 0;
+    padding: 0;
+}
+
+.site-section {
+    background-color: rgb(201, 201, 201);
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blog-post {
+    background-color: white;
+    display: inline-block;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 25%;
+}
+
+.blog-post-description {
+    display: inline;
+    font-family: proximaNovaLight;
+}
+
+.profile-picture {
+    width: 25%;
+}
+
+.blog-post-picture {
+    width: 25%;
+}
