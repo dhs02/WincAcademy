@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name=”viewport” content=”width=device width, initial-scale=1.0”>
+    <title>Dave Hooghiemstra - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="base-wrapper">
+            <header class="header-wrapper">
+                <div class="header-container name-title">
+                    <h1>Dave Hooghiemstra</h1>
+                    <span>Aspiring Web / Software Developer</span>
+                </div>
+                <div class="header-container profile-picture-container">
+                    <img src="images/picture.jpg" alt="Dave Hooghiemstra" class="profile-picture">
+                </div>
+            </header>
+            <nav class="nav-wrapper">
+                <ul>
+                    <div class="nav-button-wrapper">
+                        <div class="nav-button" id="index">
+                            <li><a href="index.html">home</a></li>
+                        </div>
+                        <div class="nav-button" id="about">
+                            <li><a href="about.html">about</a></li>
+                        </div>
+                        <div class="nav-button" id="blog">
+                            <li><a href="blog.html">blog</a></li>
+                        </div>
+                        <div class="nav-button" id="contact">
+                            <li><a href="contact.html">contact</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <main class="main-content-wrapper">
+            <div class="col">
+                <h2>Contact</h2>
+                <p>If you have questions and/or comments about this website, please feel free to contact me using the
+                    contact
+                    form on this page!</p>
+            </div>
+            <div class="col">
+                <form name="contact-form" method="POST" data-netlify="true">
+                    <div class="form-element">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-element">
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-element">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                    </div>
+                    <div class="form-element">
+                        <textarea name="text-field" id="text-field" placeholder="Enter a message here."></textarea>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button type="submit" id="submit-btn">submit</button>
+                        <input type="reset" value="reset" id="reset-btn">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer-wrapper">
+            <div class="col">
+                <div class="footer-img">
+                    <object data="images/envelope-regular.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="footer-data">
+                    <h3>E-mail</h3>
+                    <span>
+                        <a href="mailto:davehooghiemstra@gmail.com">
+                            davehooghiemstra@gmail.com
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-img">
+                    <object data="images/linkedin-brands.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="footer-data">
+                    <h3>LinkedIn</h3>
+                    <span>
+                        <a href="https://www.linkedin.com/in/dhooghiemstra">
+                            https://www.linkedin.com/in/dhooghiemstra
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-img">
+                    <object data="images/copyright-regular.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="footer-data">
+                    <h3>© 2021</h3>
+                    <span>Created by Dave Hooghiemstra</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,440 @@
+@font-face {
+    font-family: proximaNovaRegular;
+    src: url(../fonts/proximanova-regular.otf);
+}
+
+@font-face {
+    font-family: proximaNovaSemibold;
+    src: url(../fonts/proximanova-semibold.otf);
+}
+
+@font-face {
+    font-family: proximaNovaLight;
+    src: url(../fonts/proximanova-light.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 0px;
+	font-family: proximaNovaRegular;
+	letter-spacing: 0.05em;
+	/* Fix font-size not being shown properly on mobile devices */
+	text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+
+.base-wrapper {
+	background: #eae5e5;
+}
+
+.header-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.header-container {
+	display: inline-block;
+	padding: 20px;
+	margin: auto;
+}
+
+.name-title {
+	padding-top: 0;
+	margin: 20px auto;
+}
+
+.name-title h1, span {
+	padding: 20px 0;
+}
+
+.name-title h1 {
+	font-size: 4em;
+}
+
+.name-title span {
+	font-family: proximaNovaLight;
+	font-size: 2em;
+}
+
+.profile-picture {
+	border-radius: 50%;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
+
+.nav-wrapper {
+	margin-top: 20px;
+	padding-bottom: 40px;
+}
+
+.nav-button-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav-button {
+	align-items: center;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	height: 20vw;
+	width: 20vw;
+}
+
+#index {
+	background: #265573;
+}
+
+#about {
+	background: #386d73;
+}
+
+#blog {
+	background: #82a68a;
+}
+
+#contact {
+	background: #9fbf8e;
+}
+
+.nav-wrapper li {
+	display: inline-block;
+	font-size: 2em;
+	text-align: center;
+}
+
+.nav-wrapper li a {
+	color: white;
+	text-decoration: none;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+}
+
+.main-content-wrapper, .footer-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.main-content-wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-content-wrapper .col:nth-child(2), 
+.main-content-wrapper .col:nth-child(3) {
+	border-top: 1px solid #cacaca;
+}
+
+.col {
+	padding: 20px 40px;
+}
+
+.col h2 {
+	font-size: 3em;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.col p, 
+.col li {
+	font-family: proximaNovaLight;
+	font-size: 1.75em;
+	line-height: 1.5em;
+	list-style-type: none;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.col ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.col li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.li-col-1 {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.li-col-2 {
+	flex-basis: 0;
+	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.study {
+	font-family: proximaNovaSemiBold;
+}
+
+.institution {
+	color: #82a68a;
+}
+
+.location {
+	font-style: italic;
+}
+
+.progress {
+	background: #eae5e5;
+	display: flex;
+	width: 100%;
+	padding: 0;
+	margin: 10px 0;
+}
+
+#html-progress {
+	background: #265573;
+	width: 75%;
+}
+
+#css-progress {
+	background: #386d73;
+	width: 60%;
+}
+
+#js-progress {
+	background: #82a68a;
+	width: 30%;
+}
+
+#java-progress {
+	background: #9fbf8e;
+	width: 55%;
+}
+
+.col > img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.form-element {
+	margin: 20px 0;
+}
+
+.form-element > input, textarea {
+	font-family: proximaNovaLight;
+	font-size: 2em;
+	line-height: 1.5em;
+	width: 100%;
+	padding: 10px;
+	background-color:#eae5e5;
+	border: none;
+}
+
+.form-element > textarea {
+	resize: none;
+	height: 7.5em;
+}
+
+.buttons-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+#submit-btn,
+#reset-btn {
+	background: #265573;
+	color: white;
+	font-family: proximaNovaSemibold;
+	font-size: 2em;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	margin: 0 15px;
+	min-width: 150px;
+	padding: 5px 10px;
+
+}
+
+.footer-wrapper {
+	background: #9fbf8e;
+}
+
+.footer-wrapper .col {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content:left;
+	letter-spacing: 0.1em;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer-img {
+	display: flex;
+	align-items: center;
+	width: 7.5%;
+}
+
+.footer-data {
+	padding-left: 40px;
+}
+
+.footer-data a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer-wrapper .col h3 {
+	font-size: 2.5em;
+	margin: 0;
+	padding-bottom: 10px;
+	font-family: proximaNovaRegular;
+}
+
+.footer-wrapper .col span {
+	font-size: 2em;
+	font-family: proximaNovaLight;
+}
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* @media (min-width: 768px) {
+
+  } */
+
+  @media (min-width: 1024px) {
+	.nav-ul li {
+		font-size: 1.1em;
+	}
+
+	.main-content-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 20px;
+	}
+
+	.header-container {
+		padding: 10px;
+	}
+	
+	.name-title {
+		margin: 0 auto;
+	}
+	
+	.name-title h1 {
+		font-size: 2em;
+	}
+	
+	.name-title span {
+		font-size: 1em;
+	}
+
+	.profile-picture-container {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.profile-picture {
+		height: 50%;
+		object-fit: contain;
+		width: 50%;
+	}
+
+	.nav-wrapper {
+		margin-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	.nav-button-wrapper {
+		justify-content: center;
+	}
+	
+	.nav-button {
+		font-size: 0.65em;
+		margin: 0 20px;
+		height: 7.5vw;
+		width: 7.5vw;
+		min-width: 115px;
+		min-height: 115px;
+	}
+
+	.main-content-wrapper {
+		margin: 0 10%;
+	}
+	
+	.main-content-wrapper, .footer-wrapper {
+		flex-direction: row;
+	}
+
+	.main-content-wrapper .col:nth-child(2),
+	.main-content-wrapper .col:nth-child(3) {
+		border-top: none;
+		border-left: 1px solid #cacaca;
+	}
+
+	.main-content-wrapper .col {
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	.col h2 {
+		font-size: 2em;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	.col p {
+		padding-bottom: 10px;
+	}
+
+	.col p, 
+	.col li {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	}
+
+	.form-element > input, textarea {
+		font-size: 0.8em;
+	}
+
+	#submit-btn,
+	#reset-btn {
+		font-size: 0.8em;
+	}
+
+	.footer-wrapper {
+		flex-direction: row;
+		padding-bottom: 10px;
+	}
+
+	.footer-wrapper .col h3 {
+		font-size: 1em;
+		padding-bottom: 5px;
+	}
+	
+	.footer-wrapper .col span {
+		font-size: 0.75em;
+	}
+
+	.footer-img {
+		width: 35px;
+	}
+
+	.footer-data {
+		padding-left: 20px;
+	}
+  }
