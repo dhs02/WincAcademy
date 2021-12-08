@@ -14,7 +14,7 @@ const isEqual = (number1, number2) => {
 };
 
 let userName = prompt("Welcome! What is your name?");
-console.log(`Hey ${userName}`);
+alert(`Hey ${userName}`);
 
 let min = prompt("Which is the smallest number to guess?");
 let max = prompt("Which is the largest number to guess?");
@@ -33,7 +33,7 @@ while (tries > 0) {
     if (tries > 0) {
         userInput = prompt(`${tries} tries left. Enter a number between ${min} and ${max}...`);
     } else {
-        alert("You have run out of tries, too bad!");
+        alert(`You have run out of tries. The correct number was ${chosenNumber}!`);
     }
 }
 alert(`Bye ${userName}, see you!`);
