@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+#nav-menu {
+    width: 10%;
+    display: inline-block;
+}
+
+#hamburger-icon {
+    width: 100%;
+}
+
+#nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-li {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.75em;
+}
+
+input {
+    margin: 0 5px 0 0;
+}
+
+.grey {
+    background: lightgrey;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orange;
+}
+
+.purple {
+    background: purple;
+}
+
+.green {
+    background: green;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#inner-text {
+    display: inline-block;
+    margin: 30px 100px;
+}
+
+#inner-text span {
+    font-size: 2em;
+    font-weight: bold;
+}
